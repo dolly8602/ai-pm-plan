@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI训练师转行AI产品经理 - 30天学习计划</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+<style>
+  @media print { .no-print { display: none; } }
+  .hidden { display: none !important; }
+  .day-card:hover { transform: translateY(-3px); box-shadow: 0 12px 28px rgba(0,0,0,0.12); }
+  .day-card { transition: all 0.2s ease; }
+  .fade-in { animation: fadeIn 0.3s ease; }
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .nav-btn:hover { transform: scale(1.05); }
+  .nav-btn { transition: all 0.15s ease; }
+  .progress-bar { transition: width 0.3s ease; }
+  .detail-header { position: sticky; top: 0; z-index: 50; backdrop-filter: blur(8px); }
+  .week-tab.active { box-shadow: 0 4px 12px rgba(0,0,0,0.15); transform: translateY(-2px); }
+</style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+<!-- ==================== 共享头部 ==================== -->
+<header id="shared-header" class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 text-white py-10 px-4">
+  <div class="max-w-6xl mx-auto text-center">
+    <h1 class="text-3xl md:text-4xl font-bold mb-3">🤖 AI训练师 → AI产品经理</h1>
+    <p class="text-lg md:text-xl opacity-90 mb-1">30天零基础转行学习计划</p>
+    <p class="text-sm opacity-75">手把手教学 · 每日任务清晰 · 实战驱动 · 点击卡片查看详情</p>
+    <div class="mt-4 flex flex-wrap justify-center gap-2 text-xs md:text-sm">
+      <span class="bg-white/20 rounded-full px-3 py-1">📅 4周结构化</span>
+      <span class="bg-white/20 rounded-full px-3 py-1">📝 每日任务</span>
+      <span class="bg-white/20 rounded-full px-3 py-1">🛠️ 5大项目</span>
+      <span class="bg-white/20 rounded-full px-3 py-1">🎯 求职冲刺</span>
+    </div>
+  </div>
+</header>
+
+<!-- ==================== 首页 ==================== -->
+<main id="home-page" class="max-w-6xl mx-auto px-4 py-10 fade-in">
+
+  <!-- 技能全景图 -->
+  <section class="mb-10">
+    <h2 class="text-xl md:text-2xl font-bold mb-5 text-indigo-700 border-l-4 border-indigo-500 pl-3">📋 技能全景图：AI产品经理必备8大能力</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div class="bg-white rounded-xl p-4 shadow text-center"><div class="text-2xl mb-1">🧠</div><div class="font-bold text-sm text-indigo-600">AI/ML基础</div><div class="text-xs text-gray-400 mt-1">模型原理·训练推理·技术边界</div></div>
+      <div class="bg-white rounded-xl p-4 shadow text-center"><div class="text-2xl mb-1">📐</div><div class="font-bold text-sm text-purple-600">PM核心技能</div><div class="text-xs text-gray-400 mt-1">需求分析·PRD·竞品分析</div></div>
+      <div class="bg-white rounded-xl p-4 shadow text-center"><div class="text-2xl mb-1">🎨</div><div class="font-bold text-sm text-pink-600">AI产品设计</div><div class="text-xs text-gray-400 mt-1">Prompt工程·交互设计·评估</div></div>
+      <div class="bg-white rounded-xl p-4 shadow text-center"><div class="text-2xl mb-1">📊</div><div class="font-bold text-sm text-blue-600">数据驱动</div><div class="text-xs text-gray-400 mt-1">指标体系·分析·A/B测试</div></div>
+      <div class="bg-white rounded-xl p-4 shadow text-center"><div class="text-2xl mb-1">💰</div><div class="font-bold text-sm text-green-600">商业化</div><div class="text-xs text-gray-400 mt-1">API定价·Token经济·模式</div></div>
+      <div class="bg-white rounded-xl p-4 shadow text-center"><div class="text-2xl mb-1">🗂️</div><div class="font-bold text-sm text-orange-600">项目管理</div><div class="text-xs text-gray-400 mt-1">敏捷·Scrum·交付管理</div></div>
+      <div class="bg-white rounded-xl p-4 shadow text-center"><div class="text-2xl mb-1">⚖️</div><div class="font-bold text-sm text-red-600">AI伦理合规</div><div class="text-xs text-gray-400 mt-1">安全·隐私·合规·偏见</div></div>
+      <div class="bg-white rounded-xl p-4 shadow text-center"><div class="text-2xl mb-1">💬</div><div class="font-bold text-sm text-teal-600">技术沟通</div><div class="text-xs text-gray-400 mt-1">算法对话·评审·方案评估</div></div>
+    </div>
+  </section>
+
+  <!-- 四周概览 -->
+  <section class="mb-10">
+    <h2 class="text-xl md:text-2xl font-bold mb-5 text-indigo-700 border-l-4 border-indigo-500 pl-3">🗓️ 四周学习路线图</h2>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
+      <div class="bg-gradient-to-br from-blue-50 to-blue-100 rounded-xl p-4 border border-blue-200">
+        <div class="text-xs text-blue-500 font-bold mb-1">第1周</div>
+        <div class="font-bold text-blue-700 text-sm mb-1">AI基础 + PM入门</div>
+        <ul class="text-xs text-blue-800 space-y-0.5"><li>· AI/ML核心概念</li><li>· 大模型全景</li><li>· PM思维框架</li><li>· PRD与需求分析</li></ul>
+      </div>
+      <div class="bg-gradient-to-br from-purple-50 to-purple-100 rounded-xl p-4 border border-purple-200">
+        <div class="text-xs text-purple-500 font-bold mb-1">第2周</div>
+        <div class="font-bold text-purple-700 text-sm mb-1">AI产品设计核心</div>
+        <ul class="text-xs text-purple-800 space-y-0.5"><li>· Prompt Engineering</li><li>· RAG与Agent</li><li>· 竞品分析</li><li>· 模型选型评估</li></ul>
+      </div>
+      <div class="bg-gradient-to-br from-green-50 to-green-100 rounded-xl p-4 border border-green-200">
+        <div class="text-xs text-green-500 font-bold mb-1">第3周</div>
+        <div class="font-bold text-green-700 text-sm mb-1">数据驱动+商业化</div>
+        <ul class="text-xs text-green-800 space-y-0.5"><li>· 数据指标体系</li><li>· A/B测试</li><li>· Token经济学</li><li>· 定价与商业模式</li></ul>
+      </div>
+      <div class="bg-gradient-to-br from-orange-50 to-orange-100 rounded-xl p-4 border border-orange-200">
+        <div class="text-xs text-orange-500 font-bold mb-1">第4周</div>
+        <div class="font-bold text-orange-700 text-sm mb-1">实战冲刺+求职</div>
+        <ul class="text-xs text-orange-800 space-y-0.5"><li>· 完整产品设计</li><li>· 作品集打磨</li><li>· 模拟面试</li><li>· 简历投递策略</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- 30天卡片网格 - 第1周 -->
+  <section class="mb-8">
+    <h2 class="text-lg font-bold mb-4 text-blue-700 flex items-center gap-2">
+      <span class="w-3 h-3 rounded-full bg-blue-500 inline-block"></span> 第1周：AI基础 + PM入门（Day 1-7）
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+      <a href="#day-1" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-blue-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-bold">Day 1</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">认知重塑：训练师→PM的桥梁</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">角色认知</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">能力映射</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">JD分析</span></div>
+      </a>
+      <a href="#day-2" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-blue-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-bold">Day 2</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">ML基础概念速通（上）</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">监督/无监督学习</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">训练流程</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">术语词典</span></div>
+      </a>
+      <a href="#day-3" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-blue-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-bold">Day 3</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">大模型生态全景（下）</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">主流模型对比</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">技术路线</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">产品体验</span></div>
+      </a>
+      <a href="#day-4" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-blue-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-bold">Day 4</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">PM思维：需求分析与用户研究</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">用户画像</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">用户旅程图</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">访谈提纲</span></div>
+      </a>
+      <a href="#day-5" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-blue-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-bold">Day 5</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">PRD撰写 + 竞品分析方法</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">PRD模板</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">SWOT分析</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">项目1启动</span></div>
+      </a>
+      <a href="#day-6" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-blue-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-bold">Day 6</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">AI产品交互设计原则 + 动手</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">Figma入门</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">线框图</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">AI交互特性</span></div>
+      </a>
+      <a href="#day-7" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-blue-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-blue-100 text-blue-700 px-2 py-0.5 rounded-full font-bold">Day 7</span><span class="text-xs text-gray-400">⏰ 3h</span></div>
+        <h3 class="font-bold text-sm mb-2">第1周复盘 & 项目1收尾</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">思维导图</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">自测</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">行业观察</span></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 第2周卡片 -->
+  <section class="mb-8">
+    <h2 class="text-lg font-bold mb-4 text-purple-700 flex items-center gap-2">
+      <span class="w-3 h-3 rounded-full bg-purple-500 inline-block"></span> 第2周：AI产品设计核心（Day 8-14）
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+      <a href="#day-8" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-purple-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-bold">Day 8</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">Prompt Engineering 深入</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">System Prompt</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">模板化</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">安全护栏</span></div>
+      </a>
+      <a href="#day-9" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-purple-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-bold">Day 9</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">RAG与Agent产品设计</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">RAG流程</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">Agent核心</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">项目2启动</span></div>
+      </a>
+      <a href="#day-10" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-purple-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-bold">Day 10</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">竞品分析实战 + 市场洞察</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">竞品分级</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">分析维度</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">市场机会</span></div>
+      </a>
+      <a href="#day-11" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-purple-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-bold">Day 11</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">AI评估体系 + 模型选型</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">评估指标</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">Benchmark</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">选型决策</span></div>
+      </a>
+      <a href="#day-12" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-purple-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-bold">Day 12</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">多模态产品 + 技术方案评估</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">多模态体验</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">技术架构</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">项目2整合</span></div>
+      </a>
+      <a href="#day-13" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-purple-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-bold">Day 13</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">项目管理 + 敏捷开发实践</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">Scrum框架</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">看板管理</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">Sprint规划</span></div>
+      </a>
+      <a href="#day-14" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-purple-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-purple-100 text-purple-700 px-2 py-0.5 rounded-full font-bold">Day 14</span><span class="text-xs text-gray-400">⏰ 3h</span></div>
+        <h3 class="font-bold text-sm mb-2">第2周复盘 & 项目2完善</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">方案整合</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">自测题</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">能力评分</span></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 第3周卡片 -->
+  <section class="mb-8">
+    <h2 class="text-lg font-bold mb-4 text-green-700 flex items-center gap-2">
+      <span class="w-3 h-3 rounded-full bg-green-500 inline-block"></span> 第3周：数据驱动 + 商业化（Day 15-21）
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+      <a href="#day-15" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-green-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">Day 15</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">数据指标体系设计</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">AARRR</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">北极星指标</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">埋点设计</span></div>
+      </a>
+      <a href="#day-16" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-green-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">Day 16</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">数据分析基础 + 可视化</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">漏斗分析</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">图表制作</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">数据解读</span></div>
+      </a>
+      <a href="#day-17" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-green-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">Day 17</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">A/B测试 + 实验设计</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">假设驱动</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">方案设计</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">项目3启动</span></div>
+      </a>
+      <a href="#day-18" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-green-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">Day 18</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">API设计 + Token经济学 ⭐</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">Token成本</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">API设计</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">成本优化</span></div>
+      </a>
+      <a href="#day-19" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-green-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">Day 19</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">商业模式 + 定价策略</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">订阅/Freemium</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">定价方案</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">商业画布</span></div>
+      </a>
+      <a href="#day-20" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-green-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">Day 20</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">AI伦理、安全与合规 ⚠️</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">法规解读</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">注入攻击</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">内容审核</span></div>
+      </a>
+      <a href="#day-21" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-green-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-green-100 text-green-700 px-2 py-0.5 rounded-full font-bold">Day 21</span><span class="text-xs text-gray-400">⏰ 3h</span></div>
+        <h3 class="font-bold text-sm mb-2">第3周复盘 & 项目3整合</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">全案整合</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">能力差距</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">冲刺计划</span></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 第4周卡片 -->
+  <section class="mb-10">
+    <h2 class="text-lg font-bold mb-4 text-orange-700 flex items-center gap-2">
+      <span class="w-3 h-3 rounded-full bg-orange-500 inline-block"></span> 第4周：实战冲刺 + 求职准备（Day 22-30）
+    </h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+      <a href="#day-22" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-orange-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full font-bold">Day 22</span><span class="text-xs text-gray-400">⏰ 4.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">项目4：从0到1全流程 🔥</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">自由选题</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">调研+设计</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">商业+数据</span></div>
+      </a>
+      <a href="#day-23" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-orange-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full font-bold">Day 23</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">作品集打磨 Day1</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">STAR法则</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">视觉优化</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">Notion发布</span></div>
+      </a>
+      <a href="#day-24" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-orange-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full font-bold">Day 24</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">简历优化 + 社交包装</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">PM翻译</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">自我介绍</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">脉脉/LinkedIn</span></div>
+      </a>
+      <a href="#day-25" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-orange-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full font-bold">Day 25</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">面试准备：常见题+产品Sense</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">4类题型</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">答题框架</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">Q&A库</span></div>
+      </a>
+      <a href="#day-26" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-orange-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full font-bold">Day 26</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">模拟面试实战 🎯</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">AI模拟2轮</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">口头表达</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">改进清单</span></div>
+      </a>
+      <a href="#day-27" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-orange-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full font-bold">Day 27</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">案例分析 + 作品集终版</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">Cursor/Perplexity</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">现场拆解</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">反问问题</span></div>
+      </a>
+      <a href="#day-28" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-orange-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full font-bold">Day 28</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">求职策略 + 正式投递 🚀</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">三级梯队</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">定制投递</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">内推策略</span></div>
+      </a>
+      <a href="#day-29" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-orange-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full font-bold">Day 29</span><span class="text-xs text-gray-400">⏰ 3.5h</span></div>
+        <h3 class="font-bold text-sm mb-2">行业人脉 + 持续学习体系</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">信息源建设</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">内容输出</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">书单</span></div>
+      </a>
+      <a href="#day-30" class="day-card block bg-white rounded-xl p-4 shadow border-l-4 border-orange-500 cursor-pointer no-underline text-gray-800">
+        <div class="flex items-center justify-between mb-2"><span class="text-xs bg-orange-100 text-orange-700 px-2 py-0.5 rounded-full font-bold">Day 30</span><span class="text-xs text-gray-400">⏰ 3h</span></div>
+        <h3 class="font-bold text-sm mb-2">🎉 总复盘 + 毕业仪式</h3>
+        <div class="flex flex-wrap gap-1"><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">成果盘点</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">能力自评</span><span class="text-xs bg-gray-100 px-1.5 py-0.5 rounded">3月行动清单</span></div>
+      </a>
+    </div>
+  </section>
+
+  <!-- 底部CTA -->
+  <div class="bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-500 rounded-2xl p-6 text-white text-center mb-8">
+    <h2 class="text-2xl font-bold mb-2">🚀 点击任意 Day 卡片，开始你的学习之旅</h2>
+    <p class="text-sm opacity-80">每个卡片都包含手把手教学步骤 · 总学习时长约 100+ 小时</p>
+  </div>
+
+</main>
+
+<!-- ==================== 详情页容器 ==================== -->
+<div id="detail-container">
+
+  <!-- 详情页导航栏（模板，JS动态渲染） -->
+  <div id="detail-nav" class="detail-header bg-white/90 border-b border-gray-200 shadow-sm py-3 px-4 hidden">
+    <div class="max-w-6xl mx-auto flex items-center justify-between">
+      <a href="#home" class="nav-btn text-indigo-600 font-bold text-sm hover:text-indigo-800 flex items-center gap-1">
+        <i class="fa fa-arrow-left"></i> 返回首页
+      </a>
+      <div class="flex items-center gap-3">
+        <button id="prev-day-btn" class="nav-btn bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1.5 rounded-lg text-sm font-bold transition">
+          <i class="fa fa-chevron-left"></i> 上一天
+        </button>
+        <span id="current-day-label" class="font-bold text-gray-700 text-sm"></span>
+        <button id="next-day-btn" class="nav-btn bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1.5 rounded-lg text-sm font-bold transition">
+          下一天 <i class="fa fa-chevron-right"></i>
+        </button>
+      </div>
+      <div class="flex items-center gap-2">
+        <select id="jump-select" class="text-sm border border-gray-300 rounded-lg px-2 py-1.5 bg-white text-gray-700 focus:outline-none focus:ring-2 focus:ring-indigo-300">
+          <option value="">📅 快速跳转...</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ DAY 1 详情 ============ -->
+  <div id="detail-day-1" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6">
+          <span class="bg-blue-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 1</span>
+          <h1 class="text-2xl font-bold text-gray-800">认知重塑：AI训练师与AI产品经理的桥梁</h1>
+        </div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6">
+          <div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div>
+          <div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📌 核心目标</span><br><span class="text-sm">明确两个角色的异同，建立转行信心</span></div>
+          <div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📦 产出物</span><br><span class="text-sm">个人能力迁移分析表</span></div>
+        </div>
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-blue-100"><th class="border border-blue-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-blue-200 px-3 py-2 text-left w-24">时间</th><th class="border border-blue-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead>
+          <tbody>
+            <tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>阅读文章：</b>搜索并阅读「AI产品经理岗位职责与能力模型」3篇以上。推荐来源：人人都是产品经理、知乎。记录AI PM的核心工作流：需求发现→方案设计→技术评审→项目管理→上线评估。</td></tr>
+            <tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>能力映射练习：</b>用Excel/Notion做一张表，左列列出你作为AI训练师已有的技能（数据标注、Prompt编写、模型评估、badcase分析），右列对应到AI PM所需能力。你会发现大量重叠——这是你的核心优势。</td></tr>
+            <tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>观看视频：</b>B站搜索「AI产品经理入门」「大模型产品经理做什么」，观看2-3个高质量视频（推荐UP主：产品经理毛毛、AI产品经理阿禅）。做笔记记录AI PM的一天。</td></tr>
+            <tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>动手任务：</b>打开BOSS直聘/猎聘，搜索「AI产品经理」，收集10个JD，用不同颜色标注出：①你已经具备的能力 ②需要学习的能力 ③你的差异化优势。保存截图。</td></tr>
+            <tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>输出总结：</b>写一篇300字的「为什么我能成为优秀的AI产品经理」，基于你的训练师经验，找出3个核心竞争力。例如：懂模型能力边界、理解数据质量、会写Prompt。</td></tr>
+          </tbody>
+        </table>
+        <div class="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded text-sm">
+          <b>💡 训练师转PM的核心优势：</b>你比普通PM更懂模型能做什么、不能做什么，更懂数据质量对AI的影响，更懂如何与算法工程师对话。这正是当前AI PM市场上最稀缺的能力组合。
+        </div>
+      </div>
+      <div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div>
+    </main>
+  </div>
+
+  <!-- ============ DAY 2 详情 ============ -->
+  <div id="detail-day-2" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6">
+          <span class="bg-blue-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 2</span>
+          <h1 class="text-2xl font-bold text-gray-800">AI/ML基础知识速通（上）：机器学习核心概念</h1>
+        </div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6">
+          <div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div>
+          <div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📌 核心目标</span><br><span class="text-sm">掌握AI/ML基础术语，能看懂技术文档</span></div>
+          <div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📦 产出物</span><br><span class="text-sm">AI术语词典（个人版）</span></div>
+        </div>
+        <table class="w-full text-sm border-collapse">
+          <thead><tr class="bg-blue-100"><th class="border border-blue-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-blue-200 px-3 py-2 text-left w-24">时间</th><th class="border border-blue-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead>
+          <tbody>
+            <tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>视频课程：</b>Coursera/网易云课堂上搜索吴恩达《Machine Learning》或《AI For Everyone》前3节课。重点理解：监督学习 vs 无监督学习 vs 强化学习、分类 vs 回归、过拟合/欠拟合。不需要学数学公式，重点是理解概念和应用场景。</td></tr>
+            <tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>关键概念扫盲：</b>逐条理解以下术语（用ChatGPT辅助解释，每理解一个就用自己的话写一句解释）——训练集/验证集/测试集、epoch/batch size、loss/accuracy、精确率/召回率/F1、模型参数/Token/Embedding。</td></tr>
+            <tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>动手任务：</b>用ChatGPT/Claude做实验。给它同一段文本，分别用「zero-shot」「few-shot」「chain-of-thought」三种方式提问，对比输出质量。记录你的观察——这就是AI PM每天在做的Prompt策略设计。</td></tr>
+            <tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>阅读：</b>搜索「大模型训练流程」图解，理解预训练(Pre-training)→监督微调(SFT)→RLHF→推理部署 这4个阶段分别在做什么。画一张流程图。</td></tr>
+            <tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>整理输出：</b>建立你的「AI术语词典」Notion文档，今天至少收录15个术语。格式：术语名 | 一句话解释 | 产品经理需要关心的原因。</td></tr>
+          </tbody>
+        </table>
+        <div class="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded text-sm">
+          <b>💡 PM不需要会写代码：</b>你理解这些概念是为了和技术团队对话、判断需求可行性，不是亲自训练模型。关键是理解"什么可以做、什么做不了、做的话需要什么资源"。
+        </div>
+      </div>
+      <div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div>
+    </main>
+  </div>
+
+
+  <!-- ============ DAY 3 ============ -->
+  <div id="detail-day-3" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-blue-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 3</span><h1 class="text-2xl font-bold text-gray-800">AI/ML基础知识速通（下）：大模型生态全景</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📌 核心目标</span><br><span class="text-sm">了解主流模型生态，知道什么场景用什么模型</span></div><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📦 产出物</span><br><span class="text-sm">主流模型对比表</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-blue-100"><th class="border border-blue-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-blue-200 px-3 py-2 text-left w-24">时间</th><th class="border border-blue-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>模型全景图绘制：</b>用表格整理当前主流大模型——GPT-4o/5、Claude Opus/Sonnet/Haiku、Gemini、文心一言、通义千问、DeepSeek、Kimi、Llama等。记录每个模型的：公司、核心能力、定价（每百万Token价格）、上下文窗口、主要优势场景。这是AI PM的基本功。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>理解技术路线：</b>搜索并阅读「开源模型 vs 闭源模型」「通用大模型 vs 垂直领域模型」「MoE架构」「多模态模型」的概念。理解不同技术路线对产品设计的影响。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>动手体验：</b>注册并体验5个不同的AI产品（ChatGPT、Claude、Kimi、通义千问、豆包），每个至少使用15分钟。从PM视角记录：入口设计、交互方式、功能差异、定价策略。注意感受每个产品的"人格"设计。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>阅读必读文章：</b>搜索「a16z AI Canon」或「AI产品经理必读」，阅读2-3篇关于AI行业趋势的文章。了解Agent、RAG、Function Calling、MCP等热门技术概念。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>输出：</b>完成「主流模型对比分析表」，包含至少8个模型。写一段200字的洞察：当前AI产品市场的机会在哪。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 4 ============ -->
+  <div id="detail-day-4" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-blue-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 4</span><h1 class="text-2xl font-bold text-gray-800">产品经理思维框架：需求分析与用户研究</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📌 核心目标</span><br><span class="text-sm">掌握PM核心方法论：需求分析 & 用户研究</span></div><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📦 产出物</span><br><span class="text-sm">一份用户画像 + 一份需求分析文档</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-blue-100"><th class="border border-blue-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-blue-200 px-3 py-2 text-left w-24">时间</th><th class="border border-blue-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>阅读学习：</b>精读「人人都是产品经理」网站上的经典文章——《需求分析：如何识别真需求与伪需求》《用户故事地图入门》。做笔记记录：KANO模型、用户故事三要素（As a...I want...So that...）、需求优先级排序方法（MoSCoW法）。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>用户画像练习：</b>选一个你熟悉的AI产品（如ChatGPT），设计3个不同的用户画像(Persona)。每个画像包含：姓名、职业、使用场景、核心痛点、使用频率。参考模板在Figma社区或Canva上搜索"User Persona Template"。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>用户旅程地图：</b>针对上述3个用户画像中的1个，绘制用户旅程地图(User Journey Map)。横轴：发现→首次使用→深度使用→付费→推荐。纵轴：用户行为、想法、情绪曲线、痛点、机会点。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>动手任务：</b>设计一份用户访谈提纲。假设你要为「AI客服产品」做用户调研，列出10个访谈问题。注意区分开放式问题和封闭式问题，避免引导性问题。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>输出：</b>整理今天的产出物到Notion。你的AI训练师经验在这里是巨大优势——你比普通PM更了解用户会怎么"滥用"AI、会对AI产生什么不切实际的期待。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 5 ============ -->
+  <div id="detail-day-5" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-blue-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 5</span><h1 class="text-2xl font-bold text-gray-800">PRD撰写入门 + 竞品分析方法</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📌 核心目标</span><br><span class="text-sm">学会写PRD和竞品分析报告</span></div><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📦 产出物</span><br><span class="text-sm">一份PRD草稿 + 一份竞品分析报告</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-blue-100"><th class="border border-blue-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-blue-200 px-3 py-2 text-left w-24">时间</th><th class="border border-blue-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>PRD精读：</b>在网上搜索2-3份真实的PRD范例（搜索"PRD模板""产品需求文档范例"）。仔细阅读结构：背景与目标→用户与场景→功能详情→非功能需求→数据埋点→验收标准。理解每个部分为什么重要。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>动手写PRD（重点！）：</b>今天起启动你的「实战项目1」——设计一个「AI简历优化助手」产品。写出PRD的第一版：①产品背景（为什么需要这个产品）②目标用户 ③核心功能列表 ④MVP范围（V1.0做什么、不做什么）。使用Notion或飞书文档。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>学习方法论：</b>阅读「SWOT分析」「波特五力模型」「用户体验要素五层模型」的概念。这3个框架是竞品分析和产品设计的基础工具。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>竞品分析实践：</b>选择你的「AI简历优化助手」的3个竞品（可以在应用商店或AI产品导航站找），用表格从功能、用户体验、定价、技术实现、差异化5个维度做对比。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>总结：</b>记录今天学到的3个最重要的知识点，以及1个你仍然困惑的问题。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 6 ============ -->
+  <div id="detail-day-6" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-blue-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 6</span><h1 class="text-2xl font-bold text-gray-800">AI产品特有的交互设计原则 + 动手设计</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📌 核心目标</span><br><span class="text-sm">理解AI产品独特的设计挑战和原则</span></div><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📦 产出物</span><br><span class="text-sm">AI产品交互原型草图</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-blue-100"><th class="border border-blue-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-blue-200 px-3 py-2 text-left w-24">时间</th><th class="border border-blue-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>核心阅读：</b>搜索并精读「AI产品交互设计原则」「AI UX设计指南」。重点理解：①不确定性处理（AI不会100%正确，如何设计容错？）②透明度（让用户知道AI在做什么）③可控性（用户如何纠正AI？）④渐进式信任建立。推荐阅读Microsoft的「Human-AI Interaction Guidelines」。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>AI产品拆解：</b>深度体验3个不同的AI产品（推荐：Perplexity搜索、Notion AI、Cursor编辑器），每个至少用15分钟。重点分析它们的交互设计：如何展示AI生成内容？如何让用户编辑/修改？如何处理AI的"不自信"？如何收集反馈？做详细截图笔记。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>设计工具入门：</b>注册Figma（免费版），看1个Figma基础教程（B站搜索"Figma入门教程"30分钟版）。不需要成为设计师，但要会画基本的线框图。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>动手设计：</b>用Figma画你的「AI简历优化助手」的核心页面线框图（3-4个页面）：①首页/输入页 ②AI分析结果页 ③简历编辑/优化页 ④导出/分享页。重点体现AI交互特性：加载状态、流式输出、用户编辑、反馈按钮。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>输出：</b>导出Figma设计稿截图，附上你的设计说明（每个页面为什么这样设计，AI交互的考虑点）。</td></tr></tbody></table>
+        <div class="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded text-sm"><b>💡 你的训练师经验在这里是无价的：</b>你最清楚AI会在哪些场景"翻车"、用户会输入什么样的异常内容、模型输出会有哪些典型badcase。把这些经验融入你的交互设计——设计容错机制、输入校验、异常处理、fallback策略。</div>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 7 ============ -->
+  <div id="detail-day-7" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-blue-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 7</span><h1 class="text-2xl font-bold text-gray-800">第1周复盘 & 项目1收尾</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📌 核心目标</span><br><span class="text-sm">整合第1周知识，完成第一个完整项目</span></div><div class="bg-blue-50 rounded-lg p-4"><span class="font-bold text-blue-700">📦 产出物</span><br><span class="text-sm">项目1完整方案 + 周复盘笔记</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-blue-100"><th class="border border-blue-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-blue-200 px-3 py-2 text-left w-24">时间</th><th class="border border-blue-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>项目1整合：</b>将Day 5的PRD和Day 6的设计稿整合为「AI简历优化助手」完整产品方案。补充：技术实现思路（使用什么模型？为什么？）、数据需求（需要什么训练数据？）、评估指标（如何衡量产品好坏？）。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>周知识复盘：</b>回顾Day 1-6所有笔记，用思维导图（推荐XMind或ProcessOn免费版）整理第1周的知识体系。分支：AI基础→PM方法→设计原则→工具技能。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>自我检验：</b>完成以下自测题（口头回答或写下来）——①用3句话说清楚GPT-4和DeepSeek的核心区别 ②AI产品PRD和传统产品PRD最大的不同是什么？③AI产品的交互设计需要注意哪些特殊点？④解释RAG是什么，什么场景用RAG而不是微调。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>行业观察：</b>浏览「量子位」「机器之心」「36氪AI频道」近一周的AI产品新闻，记录3个你认为有趣的新AI产品，每个写2句你的产品评价。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>休息与思考：</b>今天不需要新的输入。思考一个问题——「AI产品经理和传统产品经理最大的区别是什么？」写下你的答案。你的训练师背景给你的答案会与众不同。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 8 ============ -->
+  <div id="detail-day-8" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-purple-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 8</span><h1 class="text-2xl font-bold text-gray-800">Prompt Engineering深入：从使用者到设计者</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📌 核心目标</span><br><span class="text-sm">从"会写Prompt"升级到"设计Prompt系统"</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📦 产出物</span><br><span class="text-sm">一套System Prompt设计文档</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-purple-100"><th class="border border-purple-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-purple-200 px-3 py-2 text-left w-24">时间</th><th class="border border-purple-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>系统学习Prompt Engineering：</b>阅读OpenAI官方Prompt Engineering指南和Anthropic的Prompt Library。核心概念：System Prompt vs User Prompt、Few-shot示例设计、Chain-of-Thought、结构化输出（JSON模式）、Temperature控制。做笔记记录每个技术的适用场景。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>高级技巧学习：</b>深入学习——①Prompt模板化（变量注入）②多轮对话状态管理 ③Tool Use/Function Calling的Prompt设计 ④安全护栏(Safety Guardrails)设计。搜索"DSPy"了解编程化Prompt优化的概念。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>动手实验（核心任务）：</b>设计一个「AI客服助手」的完整Prompt系统。包括：①System Prompt（角色设定+约束规则+输出格式）②针对5种常见用户场景的User Prompt模板 ③安全规则（什么不能回答）④fallback话术。这是AI PM的核心基本功。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>Prompt评估方法论：</b>学习如何评估Prompt质量。搜索"Prompt Evaluation"相关文章。创建你的评估维度：准确性、一致性、安全性、格式符合度、边界case处理。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>迭代优化：</b>用至少5个不同的测试query测试你设计的Prompt系统，记录badcase并迭代优化。这是模拟AI PM的真实工作——持续的Prompt优化和数据驱动改进。</td></tr></tbody></table>
+        <div class="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded text-sm"><b>💡 从训练师到PM的思维跃迁：</b>你过去写Prompt是为了得到好的输出。现在你要思考的是——如何设计一套Prompt系统，让100万个不同用户都能得到好的输出？这是个体力劳动到系统设计的跃迁。</div>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 9 ============ -->
+  <div id="detail-day-9" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-purple-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 9</span><h1 class="text-2xl font-bold text-gray-800">RAG与Agent产品设计：当前最热方向</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📌 核心目标</span><br><span class="text-sm">掌握RAG和Agent产品的设计要点</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📦 产出物</span><br><span class="text-sm">RAG产品方案设计 + Agent设计文档</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-purple-100"><th class="border border-purple-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-purple-200 px-3 py-2 text-left w-24">时间</th><th class="border border-purple-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>RAG深入理解：</b>搜索并阅读「RAG(检索增强生成)产品设计」相关文章3-5篇。理解RAG的核心流程：文档解析→文本分块(Chunking)→向量化(Embedding)→检索(Retrieval)→重排序(Re-ranking)→生成。重点理解每个环节对产品体验的影响。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>RAG产品体验：</b>深度体验3个RAG类产品（推荐：Dify、FastGPT、AnythingLLM或各类AI知识库产品）。分析：①知识库管理体验 ②检索准确性 ③引用溯源展示 ④不支持的内容如何优雅告知用户。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>Agent产品设计：</b>阅读「AI Agent产品设计」相关文章。理解Agent的核心要素：规划(Planning)、工具使用(Tool Use)、记忆(Memory)、多步推理。详细了解AutoGPT、MetaGPT等Agent框架的产品化思路。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>动手设计（实战项目2启动）：</b>设计一个「企业内部知识库AI助手」（RAG产品）。写出：①产品定位与目标用户 ②知识管理流程设计 ③检索与问答交互设计 ④引用与可信度展示设计 ⑤管理和运维后台功能。这是面试时最有说服力的作品。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>记录洞察：</b>写100字——RAG产品最大的用户体验挑战是什么？结合你的AI训练师经验，你最清楚模型在什么情况下会"胡说八道"。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 10 ============ -->
+  <div id="detail-day-10" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-purple-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 10</span><h1 class="text-2xl font-bold text-gray-800">竞品分析实战 + 市场洞察能力</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📌 核心目标</span><br><span class="text-sm">掌握系统化的竞品分析方法论</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📦 产出物</span><br><span class="text-sm">一份深度竞品分析报告</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-purple-100"><th class="border border-purple-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-purple-200 px-3 py-2 text-left w-24">时间</th><th class="border border-purple-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>方法论学习：</b>精读「竞品分析完整指南」。掌握：①竞品分级（直接竞品/间接竞品/潜在竞品）②分析维度（产品功能、用户体验、技术实现、商业模式、市场策略、用户口碑）③信息收集渠道（产品官网、App Store评论、社交媒体、技术博客、财报/融资新闻）。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>AI产品导航站探索：</b>浏览AI产品导航站（如「AI产品榜」「There's An AI For That」「AI工具集」），按类别了解当前AI产品生态。重点看：AI写作、AI搜索、AI编程、AI客服、AI设计5个大赛道。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>竞品分析实战：</b>选择你Day 9设计的「企业内部知识库AI助手」赛道，找3个竞品做深度分析。用Excel/Notion做对比表，维度包括：目标用户、核心功能、技术方案（是否自研模型？用哪个基座模型？）、定价模式、优势、劣势、用户评价（去ProductHunt或各应用商店收集）。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>洞察提炼：</b>基于竞品分析，找出3个市场机会点（竞品做得不好的地方）。这是PM的核心能力——从信息中提炼洞察。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>输出：</b>写一份200字的竞品分析摘要，包含：赛道现状、主要玩家、你的产品差异化机会。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 11 ============ -->
+  <div id="detail-day-11" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-purple-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 11</span><h1 class="text-2xl font-bold text-gray-800">AI产品评估体系 + 模型选型决策</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📌 核心目标</span><br><span class="text-sm">掌握AI产品评估和模型选型决策方法</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📦 产出物</span><br><span class="text-sm">评估体系文档 + 模型选型决策报告</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-purple-100"><th class="border border-purple-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-purple-200 px-3 py-2 text-left w-24">时间</th><th class="border border-purple-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>AI产品评估体系：</b>学习如何建立AI产品的评估指标体系。搜索「LLM Evaluation」「AI产品评估指标」。核心维度：①准确性评估（精确率/召回率/F1/BLEU/ROUGE）②用户体验评估（满意度/任务完成率/时间效率）③安全性评估（有害内容率/拒答率）④成本效率（单次调用成本/延迟）。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>Benchmark理解：</b>了解主流AI Benchmark——MMLU、HumanEval、GSM8K、MT-Bench、Chatbot Arena。理解每个Benchmark测什么，以及Benchmark的局限性。PM不需要跑Benchmark，但要会看懂Benchmark报告。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>模型选型决策框架：</b>学习如何为产品选择合适的模型。建立决策矩阵：维度包括——能力需求（推理/创作/代码/多语言）、成本预算、延迟要求、数据安全（是否需要私有化部署）、定制化需求（是否需要微调）。搜索「How to choose LLM for your product」。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>动手任务：</b>为你的「知识库AI助手」项目做模型选型决策。比较3个候选方案（如GPT-4o API、DeepSeek API + 微调、开源模型私有化部署），从能力、成本、延迟、安全、可维护性5个角度打分，选出最优方案并写理由。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>总结：</b>模型选型是AI PM的核心决策之一，直接影响产品体验和商业模型。写下你今天最重要的3个收获。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 12 ============ -->
+  <div id="detail-day-12" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-purple-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 12</span><h1 class="text-2xl font-bold text-gray-800">多模态AI产品设计 + 技术方案评估</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📌 核心目标</span><br><span class="text-sm">了解多模态产品设计和技术方案评估</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📦 产出物</span><br><span class="text-sm">技术方案评估文档 + 项目2整合</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-purple-100"><th class="border border-purple-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-purple-200 px-3 py-2 text-left w-24">时间</th><th class="border border-purple-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>多模态产品体验：</b>深度体验多模态AI产品——GPT-4o的图像理解、Sora/可灵的视频生成、Suno/Udio的音乐生成、Midjourney/DALL-E的图像生成。从PM视角分析每种模态的产品化挑战：响应速度、质量评估标准、用户交互模式、内容审核。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>阅读：</b>搜索「多模态AI产品设计挑战」。理解文本/图像/音频/视频不同模态的组合设计，以及跨模态搜索、理解、生成的产品形态。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>技术方案评估能力（重点）：</b>AI PM经常需要评估技术方案的可行性，但不需要写代码。学习阅读技术方案文档的框架：①架构图怎么看（前端→API网关→模型服务→数据库）②关键技术选型的trade-off（为什么用Redis不用MySQL？为什么用流式输出？）③预估工作量和风险。在网上找2篇AI产品的技术方案分享文章阅读。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>动手任务：</b>为你的「知识库AI助手」写一份技术方案评估——需要哪些技术组件？预估开发周期？可能的技术风险？MVP阶段技术上的最小化方案是什么？</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>项目2整合：</b>将Day 9-12关于「企业内部知识库AI助手」的所有产出整合为完整方案：产品定位→用户画像→功能设计→交互原型→模型选型→技术方案→评估体系。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 13 ============ -->
+  <div id="detail-day-13" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-purple-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 13</span><h1 class="text-2xl font-bold text-gray-800">项目管理基础 + 敏捷开发实践</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📌 核心目标</span><br><span class="text-sm">掌握PM必备的项目管理技能</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📦 产出物</span><br><span class="text-sm">一份项目排期表 + Sprint规划</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-purple-100"><th class="border border-purple-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-purple-200 px-3 py-2 text-left w-24">时间</th><th class="border border-purple-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>敏捷开发入门：</b>学习Scrum框架基础——Sprint、Daily Standup、Sprint Review、Retrospective。理解Product Backlog和Sprint Backlog的区别。阅读「Scrum Guide」中文版或看一个30分钟的介绍视频。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>项目管理工具实操：</b>注册并使用Trello或飞书多维表格（免费），学习看板(Kanban)管理。创建「待办→设计中→开发中→测试中→已上线」的流程。把你的「知识库AI助手」产品功能拆成20-30个User Story放入看板。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>需求优先级排序：</b>学习RICE评分法（Reach×Impact×Confidence/Effort）。用RICE法给你的20-30个User Story排序，确定MVP（最小可行产品）的范围。理解MVP的核心原则——用最少的功能验证最核心的假设。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>AI项目管理特殊性：</b>学习AI项目管理的独特挑战——①模型效果的不确定性 ②数据依赖 ③评估周期长 ④GPU资源协调。搜索「Managing AI/ML Projects」相关文章。记录与传统软件项目的5个关键区别。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>动手任务：</b>为你的「知识库AI助手」做一个4周Sprint规划。Week 1做什么、Week 2做什么……每周有明确的交付物。考虑AI项目的不确定性——预留buffer时间。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 14 ============ -->
+  <div id="detail-day-14" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-purple-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 14</span><h1 class="text-2xl font-bold text-gray-800">第2周复盘 & 项目2完善</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📌 核心目标</span><br><span class="text-sm">整合第2周知识，完成项目2</span></div><div class="bg-purple-50 rounded-lg p-4"><span class="font-bold text-purple-700">📦 产出物</span><br><span class="text-sm">项目2完整方案 + 周复盘笔记</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-purple-100"><th class="border border-purple-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-purple-200 px-3 py-2 text-left w-24">时间</th><th class="border border-purple-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>项目2完善：</b>将「企业内部知识库AI助手」所有文档整理为一份完整的「产品设计方案」。结构：封面→目录→产品概述→市场分析→用户研究→功能设计→交互原型→技术方案→项目规划→商业模型。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>周知识复盘：</b>回顾Day 8-13的学习笔记。用思维导图整理第2周知识体系。重点关注Prompt Engineering→RAG→Agent→评估→选型的逻辑链路。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>自测题：</b>①说清楚System Prompt和User Prompt在设计上的不同考虑 ②RAG产品的核心体验挑战是什么？③Agent产品最大的产品化难点在哪？④如何为产品选择合适的模型？⑤AI项目的Sprint规划与传统项目有什么不同？</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>行业拓展：</b>阅读2-3篇本周发布的AI产品相关文章。关注「AI产品经理」公众号、即刻App上的产品讨论。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>自我评价：</b>给自己这两周的学习打分（1-10分）。找出最薄弱的一环，下周针对性加强。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+
+  <!-- ============ DAY 15 ============ -->
+  <div id="detail-day-15" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-green-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 15</span><h1 class="text-2xl font-bold text-gray-800">AI产品数据指标体系设计</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📌 核心目标</span><br><span class="text-sm">掌握AI产品数据指标体系设计</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📦 产出物</span><br><span class="text-sm">一份完整的数据指标体系文档</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-green-100"><th class="border border-green-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-green-200 px-3 py-2 text-left w-24">时间</th><th class="border border-green-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>数据指标体系方法论：</b>学习AARRR模型（Acquisition获客→Activation激活→Retention留存→Revenue收入→Referral推荐）和北极星指标(North Star Metric)概念。阅读2-3篇关于AI产品数据指标的文章。重点理解AI产品特有指标：Token消耗量、响应延迟、模型调用成功率、用户反馈率。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>AI特有指标深入：</b>学习AI产品独有的数据指标——①模型层：首Token延迟(TTFT)、Token生成速度、幻觉率、拒答率 ②产品层：AI功能使用率、AI生成内容采纳率、用户编辑率、Prompt平均长度 ③业务层：AI节省的时间、AI提升的效率。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>埋点设计入门：</b>学习数据埋点的基本概念——页面浏览事件、点击事件、曝光事件、自定义事件。了解埋点文档的基本格式：事件名 | 触发时机 | 参数 | 用途。不需要写代码，但要能写出清楚的埋点需求。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>动手任务：</b>为你的「知识库AI助手」设计完整的指标体系。包括：北极星指标（1个）、核心指标（5-8个）、虚荣指标（需要警惕的指标）。每个指标写清楚：定义、计算方式、目标值。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>总结：</b>数据思维是PM和训练师最大的区别之一。你过去关注模型表现数据（准确率等），现在要扩展到用户行为数据、商业数据。写下3个关键心得。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 16 ============ -->
+  <div id="detail-day-16" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-green-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 16</span><h1 class="text-2xl font-bold text-gray-800">数据分析基础 + 可视化</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📌 核心目标</span><br><span class="text-sm">掌握基础数据分析和可视化技能</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📦 产出物</span><br><span class="text-sm">一份数据分析报告</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-green-100"><th class="border border-green-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-green-200 px-3 py-2 text-left w-24">时间</th><th class="border border-green-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>数据分析思维：</b>学习数据分析的基本流程——明确问题→收集数据→清洗数据→分析数据→得出结论→推动决策。掌握描述性统计（均值、中位数、分位数、标准差）和漏斗分析。不需要学Python，理解概念即可。推荐阅读「精益数据分析」核心章节摘要。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>可视化工具学习：</b>学习使用在线工具做数据可视化。推荐：飞书多维表格的图表功能、百度图说(ECharts在线版)、或者直接在Excel做图表。掌握基础图表类型：折线图（趋势）、柱状图（对比）、饼图（占比）、漏斗图（转化）。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>AI产品数据分析案例：</b>假设你是ChatGPT的产品经理，你拿到了一份用户使用数据（可以自己构造一份模拟数据：日活用户、会话数、消息数、留存率、功能使用分布等）。做一份分析报告：①DAU趋势 ②用户留存曲线 ③功能使用分布 ④付费转化漏斗。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>动手任务：</b>在Excel或飞书表格中创建模拟数据，制作至少3个图表。每个图表下写一句话的数据解读。PM不需要做复杂分析，但要能从数据中读出故事。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>输出：</b>整理你的数据分析报告。包含：背景、关键发现（至少3个）、数据图表、行动建议。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 17 ============ -->
+  <div id="detail-day-17" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-green-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 17</span><h1 class="text-2xl font-bold text-gray-800">A/B测试 + 实验设计（实战项目3启动）</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📌 核心目标</span><br><span class="text-sm">掌握A/B测试设计和AI产品实验方法</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📦 产出物</span><br><span class="text-sm">A/B测试方案 + 项目3启动</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-green-100"><th class="border border-green-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-green-200 px-3 py-2 text-left w-24">时间</th><th class="border border-green-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>A/B测试基础：</b>学习A/B测试的核心概念——假设驱动、随机分流、对照组vs实验组、统计显著性(p值)、最小样本量。不需要会算，理解概念和流程即可。搜索「A/B测试入门」看2篇图文教程。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>AI产品A/B测试的特殊性：</b>AI产品的A/B测试和传统产品不同——①模型效果不是100%稳定的 ②同一Prompt不同时刻结果可能不同 ③评估指标更多元（不只是点击率）。学习如何设计AI产品的对照实验：模型A vs 模型B、Prompt A vs Prompt B、功能A vs 功能B。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>动手设计A/B测试：</b>假设你要为「AI客服」产品测试两种不同的欢迎语设计对用户提问率的影响。写出完整的A/B测试方案：①实验假设 ②变量定义 ③分流方案 ④样本量估算 ⑤核心指标 ⑥实验周期 ⑦决策标准。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>实战项目3启动——「AI写作助手」产品：</b>启动第3个项目。这次重点做数据驱动决策。产品定位：帮助内容创作者高效写作的AI助手。完成产品定位、目标用户、核心假设（你认为用户最需要什么？）。这个假设将用A/B测试来验证。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>输出：</b>完成A/B测试方案 + 项目3产品定位文档。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 18 ============ -->
+  <div id="detail-day-18" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-green-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 18</span><h1 class="text-2xl font-bold text-gray-800">API产品设计 + Token经济学</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📌 核心目标</span><br><span class="text-sm">理解API产品设计和Token经济学</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📦 产出物</span><br><span class="text-sm">API产品设计文档 + Token成本分析</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-green-100"><th class="border border-green-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-green-200 px-3 py-2 text-left w-24">时间</th><th class="border border-green-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>API产品设计基础：</b>很多AI产品以API形式交付。了解RESTful API基础概念（不需要写代码）——Endpoint、请求/响应、认证方式(API Key)、速率限制(Rate Limit)、错误码。搜索「API产品设计最佳实践」阅读1-2篇文章。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>Token经济学（重点！）：</b>这是AI PM必备的商业知识。学习：①Token是什么（输入Token vs 输出Token）②各大模型的Token定价（整理一个价格对比表）③单次对话的成本估算方法 ④上下文窗口对成本的影响 ⑤如何通过Prompt优化降低Token消耗。搜索「LLM Token Pricing」「Token经济学」深入了解。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>动手算成本：</b>假如你的AI产品每天有10000次对话，每次平均输入500 Token、输出800 Token，使用GPT-4o API。计算：①每日Token消耗 ②每日成本 ③每月成本 ④如果DAU增长10倍，成本如何变化？⑤如果要保持毛利率60%，应该如何定价？</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>成本优化策略：</b>学习降低AI产品成本的常见策略——①缓存常见问题 ②使用更便宜的模型处理简单任务（模型路由/Router）③Prompt压缩 ④输出长度控制 ⑤批处理。每个策略写一句适用场景。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>总结：</b>Token经济学是AI PM的核心商业技能。面试中经常出现"估算某AI产品的成本"类问题。写下今天最重要的3个收获。</td></tr></tbody></table>
+        <div class="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded text-sm"><b>💡 面试常见题：</b>「请估算ChatGPT一天的运营成本」「如果你要为某场景选择模型，你会怎么选？」——今天的Token经济学和成本分析就是为这类题目做准备的。</div>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 19 ============ -->
+  <div id="detail-day-19" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-green-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 19</span><h1 class="text-2xl font-bold text-gray-800">AI产品商业模式 + 定价策略</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📌 核心目标</span><br><span class="text-sm">掌握AI产品商业化和定价策略</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📦 产出物</span><br><span class="text-sm">商业模型文档 + 定价方案</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-green-100"><th class="border border-green-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-green-200 px-3 py-2 text-left w-24">时间</th><th class="border border-green-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>AI产品商业模式全景：</b>研究当前主流AI产品的商业模式——①订阅制(ChatGPT Plus/Claude Pro)②按量计费(API Token付费)③Freemium(免费+付费增值)④企业定制/私有化部署 ⑤平台抽成(GPT Store)。每种模式找2个实际案例，分析其优劣势。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>定价策略学习：</b>学习产品定价的核心方法——①成本导向定价 ②竞争导向定价 ③价值导向定价。理解价格锚定(Price Anchoring)和价格歧视（按用户群体差异化定价）的概念。AI产品的特殊性：成本是动态的（Token价格波动）。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>动手设计定价方案：</b>为你的「AI写作助手」（Day 17的项目3）设计定价方案。①免费版：给什么？限制什么？②Pro版（月付）：什么价格？什么功能？③Team版（多人）：什么价格？什么差异化？每个版本写清楚价值主张。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>商业模型画布：</b>用Business Model Canvas（商业模式画布）框架完成你的「AI写作助手」商业模型。9个模块：客户细分、价值主张、渠道、客户关系、收入来源、核心资源、关键业务、合作伙伴、成本结构。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>输出：</b>整理定价方案和商业模型画布。思考：为什么有些AI产品免费？免费背后的商业逻辑是什么？</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 20 ============ -->
+  <div id="detail-day-20" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-green-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 20</span><h1 class="text-2xl font-bold text-gray-800">AI伦理、安全与合规</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📌 核心目标</span><br><span class="text-sm">掌握AI产品伦理合规核心知识</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📦 产出物</span><br><span class="text-sm">AI产品合规清单 + 安全方案</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-green-100"><th class="border border-green-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-green-200 px-3 py-2 text-left w-24">时间</th><th class="border border-green-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>AI伦理框架：</b>学习AI伦理的核心议题——公平性(Bias & Fairness)、可解释性(Explainability)、透明度(Transparency)、问责制(Accountability)、隐私保护(Privacy)。搜索「AI Ethics Guidelines」「Responsible AI」了解Google、Microsoft的AI伦理原则。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>中国AI法规：</b>了解中国的AI监管法规——《生成式人工智能服务管理暂行办法》《互联网信息服务深度合成管理规定》。理解算法备案、内容安全审核、用户知情权等要求。作为产品经理，这些合规要求直接影响产品设计。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>AI安全实战：</b>学习AI产品的安全威胁——①Prompt Injection(提示注入)②Jailbreak(越狱攻击)③数据投毒④模型逆向攻击。了解对应的防护策略——输入过滤、输出审核、速率限制、人工审核兜底。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>动手任务：</b>为你的「AI写作助手」编写一份安全与合规方案。包含：①内容安全审核机制（输入和输出的审核规则）②用户隐私保护措施 ③敏感话题处理策略 ④未成年人保护 ⑤合规备案清单。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>训练师视角加成：</b>你处理过无数的badcase——有害内容、偏见言论、事实错误。这些经验让你在安全合规方面天然敏感。写下你处理过的3种典型安全问题，以及产品上应如何预防。</td></tr></tbody></table>
+        <div class="mt-4 p-4 bg-red-50 border-l-4 border-red-400 rounded text-sm"><b>⚠️ AI合规是面试高频考点：</b>「你们产品如何做内容安全？」「遇到用户输入敏感内容怎么处理？」「如何防止模型幻觉导致的法律风险？」——这些都是AI PM面试的必问题目。</div>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 21 ============ -->
+  <div id="detail-day-21" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-green-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 21</span><h1 class="text-2xl font-bold text-gray-800">第3周复盘 & 项目3完整整合</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📌 核心目标</span><br><span class="text-sm">整合数据、商业、合规知识完成项目3</span></div><div class="bg-green-50 rounded-lg p-4"><span class="font-bold text-green-700">📦 产出物</span><br><span class="text-sm">项目3完整方案 + 周复盘笔记</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-green-100"><th class="border border-green-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-green-200 px-3 py-2 text-left w-24">时间</th><th class="border border-green-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">90min</td><td class="border px-3 py-2"><b>项目3完整整合（重点！）：</b>将「AI写作助手」的所有产出整合为完整方案，这是你作品集里数据/商业思维体现最充分的项目。结构：①产品定位与市场分析 ②目标用户与需求分析 ③功能设计（含Prompt策略）④指标体系 ⑤A/B测试方案 ⑥Token成本分析 ⑦定价方案与商业模型 ⑧安全合规方案。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>三周复盘：</b>回顾3周21天的学习。三周三个项目：①AI简历优化助手（PM基础+设计）②知识库AI助手（技术方案+RAG）③AI写作助手（数据驱动+商业化）。检查是否有遗漏的技能点。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>自测题：</b>①北极星指标和AARRR的关系 ②AI产品A/B测试的特殊注意事项 ③Token成本估算方法 ④Freemium模式为什么在AI产品中流行？⑤中国AI产品上线前需要哪些合规准备？</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>能力差距分析：</b>回顾Day 1做的JD分析，对比3周后的自己。哪些能力已经建立？哪些还需要加强？制定最后9天的重点突破方向。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>奖励自己：</b>3周的高强度学习值得庆祝。记录下你最骄傲的3个成果，准备好最后一周的冲刺。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+
+  <!-- ============ DAY 22 ============ -->
+  <div id="detail-day-22" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-orange-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 22</span><h1 class="text-2xl font-bold text-gray-800">综合实战项目4：AI产品从0到1全流程</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">⏰ 学习时长</span><br><span class="text-sm">约 4-5 小时（高强度）</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📌 核心目标</span><br><span class="text-sm">独立完成完整AI产品设计全流程</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📦 产出物</span><br><span class="text-sm">一份完整的产品立项方案</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-orange-100"><th class="border border-orange-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-orange-200 px-3 py-2 text-left w-24">时间</th><th class="border border-orange-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">90min</td><td class="border px-3 py-2"><b>项目4启动——自由选题：</b>今天是你能力集大成的一天。从以下方向中自选一个（或自己想一个），完成从0到1的产品立项方案：①AI英语口语陪练 ②AI法律咨询助手 ③AI代码Review工具 ④AI儿童故事生成器 ⑤AI健康饮食规划师。选题原则：选你最熟悉、最有热情的领域。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>产品调研（快速版）：</b>30分钟内完成竞品扫描（找3-5个竞品），30分钟完成目标用户画像（找3个真实或模拟用户进行需求访谈）。用你前三周学到的框架快速出结论。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>产品设计：</b>完成核心功能列表（MVP范围）+ 交互原型（线框图3-4页）+ Prompt策略设计（至少System Prompt和3种场景的User Prompt模板）+ 模型选型决策。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>商业与数据：</b>完成指标体系设计 + Token成本估算 + 定价方案 + 商业模型画布 + 安全合规检查清单。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>整合输出：</b>将以上内容整合为一份完整的「产品立项方案」PPT或文档。这份方案的结构就是你未来工作中的「产品评审会」需要展示的内容。</td></tr></tbody></table>
+        <div class="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded text-sm"><b>💡 这是面试中最重要的作品：</b>面试官会通过你的作品方案判断「这个人是否具备完整的AI PM思维」。确保每个决策都有依据，每个设计都有理由。</div>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 23 ============ -->
+  <div id="detail-day-23" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-orange-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 23</span><h1 class="text-2xl font-bold text-gray-800">作品集打磨（Day 1）</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📌 核心目标</span><br><span class="text-sm">将4个项目打磨为面试级作品集</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📦 产出物</span><br><span class="text-sm">作品集V1（Notion/飞书/GitHub）</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-orange-100"><th class="border border-orange-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-orange-200 px-3 py-2 text-left w-24">时间</th><th class="border border-orange-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>作品集结构学习：</b>搜索「产品经理作品集」「AI PM Portfolio」，看5-10个优秀作品集案例。记录它们共有的结构：①个人简介（突出AI训练师+PM的复合背景）②项目展示（每个项目一页）③技能总结 ④联系方式。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">90min</td><td class="border px-3 py-2"><b>项目展示页面优化（重点）：</b>为你的4个项目各写一页标准展示。格式：①项目名称+一句话定位 ②背景与问题 ③目标用户 ④核心功能（图文）⑤我的角色与贡献 ⑥关键决策与原因 ⑦预期效果/数据。用STAR法则（情境→任务→行动→结果）来组织叙述。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>视觉优化：</b>统一4个项目的视觉风格——配色一致、排版一致、图表风格一致。用Figma或Canva制作项目配图（产品架构图、用户流程图、数据仪表盘示意图）。视觉呈现是PM审美能力的体现。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>个人介绍页：</b>写一个强有力的个人介绍。核心话术：「AI训练师出身，懂模型能力边界、懂Prompt设计、懂数据质量。具备从模型评估到产品设计的完整视角。」突出你的不可替代性。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>发布：</b>将作品集发布到Notion公开页面或飞书文档，方便分享链接。写好页面的Title和Description。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 24 ============ -->
+  <div id="detail-day-24" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-orange-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 24</span><h1 class="text-2xl font-bold text-gray-800">简历优化 + LinkedIn/脉脉包装</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📌 核心目标</span><br><span class="text-sm">打造有竞争力的AI PM简历</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📦 产出物</span><br><span class="text-sm">优化后的简历 + 社交资料完善</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-orange-100"><th class="border border-orange-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-orange-200 px-3 py-2 text-left w-24">时间</th><th class="border border-orange-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>简历方法论：</b>搜索「AI产品经理简历怎么写」「PM简历优化技巧」。核心原则：①量化成果（用数字说话）②突出AI相关经验 ③用PM的语言重写训练师经历。看5份优秀PM简历案例找感觉。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">90min</td><td class="border px-3 py-2"><b>重写简历（核心任务）：</b>将你的AI训练师经历「翻译」成PM视角——「编写了XX条Prompt模板」→「设计并迭代了面向XX场景的Prompt系统，提升了XX%的模型输出质量」「评估XX条模型输出」→「建立了XX维度的模型质量评估体系，推动了XX项产品优化」「标注XX数据集」→「主导了XX领域的数据策略，定义了XX个分类标准和标注规范」。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>项目经验撰写：</b>在简历中加入你的4个项目。格式：项目名 | 时间 | 角色。用1-2句话描述每个项目的核心价值和你的贡献。链接作品集。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>自我介绍话术：</b>撰写3个版本的自我介绍——①30秒电梯Pitch（面试开场用）②1分钟完整版（面试详细版）③一句话标签（社交资料用）。核心信息：我是AI训练师转AI PM，我懂模型也懂用户。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>社交资料优化：</b>①更新脉脉/LinkedIn个人资料，头像→职位→简介→项目经验 ②在即刻/知乎上发一篇短文分享你的转行学习心得（建立行业存在感）③关注10个AI产品相关的公众号/博主。</td></tr></tbody></table>
+        <div class="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded text-sm"><b>💡 简历关键词优化：</b>AI产品经理的JD中高频词——Prompt Engineering、模型评估、RAG、Agent、数据驱动、用户增长、商业化、Token成本、A/B测试。确保这些词在你的简历中出现。</div>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 25 ============ -->
+  <div id="detail-day-25" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-orange-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 25</span><h1 class="text-2xl font-bold text-gray-800">面试准备：常见问题 + 产品Sense题</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📌 核心目标</span><br><span class="text-sm">掌握AI PM面试常见题型和回答框架</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📦 产出物</span><br><span class="text-sm">面试Q&A准备文档</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-orange-100"><th class="border border-orange-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-orange-200 px-3 py-2 text-left w-24">时间</th><th class="border border-orange-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>面试题型整理：</b>搜索「AI产品经理面试题」「PM面试常见问题」。整理出4类题型——①产品Sense题（"如何改进ChatGPT？""设计一个AI记账产品"）②数据分析题（"DAU下降了，怎么分析？"）③技术理解题（"解释RAG的原理""选GPT-4还是Claude？"）④行为题（"遇到的最大挑战""如何处理需求变更"）。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>产品Sense题训练（重点）：</b>产品Sense题是面试的"一票否决"项。学习答题框架——①明确用户与场景 ②分析核心需求 ③提出功能方案 ④考虑AI的边界 ⑤指标衡量。练习以下3道经典题：①如何改进微信的AI功能？②设计一个AI旅行规划产品 ③如果你负责ChatGPT，下个季度重点做什么？每道题写300字回答。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>技术理解题准备：</b>准备以下问题的1-2分钟回答——①解释RAG是什么，用在什么场景 ②GPT-4和DeepSeek的核心区别 ③Prompt Engineering的常见技巧 ④AI产品如何做A/B测试 ⑤Token成本如何估算 ⑥模型幻觉怎么处理。结合你的训练师经验给出有深度的回答。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>行为题准备：</b>用STAR法则准备5个故事——①你做出的最有影响力的决策 ②你如何处理一个有挑战性的项目 ③你如何与算法工程师协作 ④你如何处理badcase驱动的产品优化 ⑤你如何学习新知识。注意：每个故事都要体现你的PM思维。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>输出：</b>建立你的「面试Q&A准备库」文档。把以上所有题目的回答整理进去。后续不断补充新题目。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 26 ============ -->
+  <div id="detail-day-26" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-orange-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 26</span><h1 class="text-2xl font-bold text-gray-800">模拟面试实战</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📌 核心目标</span><br><span class="text-sm">通过模拟面试检验并提升面试能力</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📦 产出物</span><br><span class="text-sm">模拟面试录音+改进清单</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-orange-100"><th class="border border-orange-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-orange-200 px-3 py-2 text-left w-24">时间</th><th class="border border-orange-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>AI模拟面试（第1轮）：</b>打开ChatGPT或Claude，输入以下Prompt：「你现在是AI产品经理面试官，我是应聘者。请对我进行一轮完整的AI PM面试，包含：1分钟自我介绍、产品Sense题（1道）、数据分析题（1道）、技术理解题（1道）、行为题（1道）、反问环节。请逐题提问，并对我的每个回答给出评分和改进建议。」认真对待这轮面试，全程记录你的回答和AI反馈。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>第1轮复盘：</b>通读AI的反馈，标记出：①回答中的逻辑漏洞 ②表达不清晰的地方 ③可以补充的技术深度 ④紧张导致的口头禅。列出改进清单。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>AI模拟面试（第2轮）：</b>基于第1轮的改进清单，进行第2轮模拟面试。用新的Prompt让AI换一个面试风格（更技术向或更产品向）。同样记录全流程。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>真实模拟（如果可能）：</b>找一位朋友或前同事帮你做一次真人模拟面试。如果找不到真人，用语音模式和AI对话（模拟真实面试的口头表达）。口头表达和书面回答完全不同——你需要练习流畅的口头表达。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>总结：</b>列出你的Top 5面试改进点。写入「面试Q&A准备库」文档。</td></tr></tbody></table>
+        <div class="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded text-sm"><b>🎯 面试模拟Prompt模板：</b>「你是一名经验丰富的AI产品总监，正在面试AI PM候选人。你关注候选人的产品思维、AI技术理解、数据驱动能力和沟通表达。请对我进行30分钟的模拟面试，逐题提问并为每个回答打分（1-5分）+给出改进建议。」</div>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 27 ============ -->
+  <div id="detail-day-27" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-orange-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 27</span><h1 class="text-2xl font-bold text-gray-800">案例分析特训 + 作品集终版</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📌 核心目标</span><br><span class="text-sm">深度案例分析+作品集最终优化</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📦 产出物</span><br><span class="text-sm">案例分析报告 + 作品集终版</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-orange-100"><th class="border border-orange-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-orange-200 px-3 py-2 text-left w-24">时间</th><th class="border border-orange-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>深度案例分析：</b>选择一个知名AI产品做深度案例分析（推荐：Cursor、Perplexity、Coze/扣子）。从PM视角分析：①产品演进路线（从V1到现在的功能变化）②关键产品决策（什么功能做了，什么没做）③增长策略（怎么获取用户的）④商业模式（怎么赚钱的）⑤如果你是这个产品的PM，下一步做什么？写一份1000字的分析报告。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>AI产品拆解练习：</b>打开一个新的AI产品（选择你没用过的），限时15分钟体验，然后口述（录音）这个产品的：产品定位、目标用户、核心功能、3个优点、3个改进建议。这是面试中常见的「现场拆解题」。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>作品集终版打磨：</b>回顾Day 23的作品集，根据Day 25-26面试中发现的薄弱环节做针对性补充。确保每个项目展示页都能回答面试官可能的追问。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>准备「向面试官提问」的问题：</b>面试最后环节「你有什么想问我们的？」是拉开差距的机会。准备5个高质量问题：①团队目前的AI产品处于什么阶段？②AI PM在团队中与算法工程师怎么分工协作？③团队对AI产品质量的评估标准是什么？④目前产品最大的挑战是什么？⑤公司对AI PM的成长路径是什么样的？</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>作品集发布：</b>最终检查作品集链接是否可用、排版是否精美、内容是否有误。确认可分享。</td></tr></tbody></table>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 28 ============ -->
+  <div id="detail-day-28" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-orange-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 28</span><h1 class="text-2xl font-bold text-gray-800">求职策略 + 正式投递</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📌 核心目标</span><br><span class="text-sm">制定求职策略并开始投递</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📦 产出物</span><br><span class="text-sm">求职跟踪表 + 首批投递</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-orange-100"><th class="border border-orange-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-orange-200 px-3 py-2 text-left w-24">时间</th><th class="border border-orange-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>目标公司分级：</b>在Excel中建立你的「求职目标公司清单」。按3个梯队分类——①梦想梯队（头部AI公司：字节、腾讯、阿里、百度、商汤、智谱、月之暗面等）②核心梯队（AI创业公司：MiniMax、百川、零一万物、DeepSeek等）③保底梯队（传统公司AI部门、中小型AI公司）。每家公司记录：招聘渠道、AI PM JD、联系人、申请状态。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>求职渠道建立：</b>完善以下渠道的求职资料——①BOSS直聘（上传简历，搜索「AI产品经理」并收藏心仪岗位）②猎聘（上传简历，开启「求职状态」）③脉脉（更新状态为「看机会」，私信目标公司的HR/产品负责人）④内推渠道（询问朋友圈、前同事、产品社群是否有目标公司的内推资源）。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>定制化投递（重点！）：</b>选择3家最心仪的公司，针对每个岗位JD定制化修改简历和求职信。不要海投——AI PM岗位竞争激烈，定制化投递命中率高3倍。每个岗位写一段100字的「为什么我适合这个岗位」。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>内推策略：</b>在脉脉上找到目标公司的在职PM或HR，发送好友申请并附上简短自我介绍。话术模板：「你好，我是AI训练师出身，正在转行AI PM，已经完成了X个AI产品设计项目。看到贵司的AI PM岗位很感兴趣，冒昧请教一下团队情况。」</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>建立追踪表：</b>创建求职追踪表——公司名|岗位|投递日期|渠道|状态（已投/初筛/面试/offer/拒）|备注。后续每天更新。设定目标：每天投递3-5家，每周至少安排2场面试。</td></tr></tbody></table>
+        <div class="mt-4 p-4 bg-yellow-50 border-l-4 border-yellow-400 rounded text-sm"><b>💡 求职心态：</b>转行求职通常需要1-3个月。30天学习后开始投递是合理的节奏。在面试中不断学习和迭代——每次面试都是一次免费的学习机会。被拒不代表你不行，只代表匹配度不够。</div>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 29 ============ -->
+  <div id="detail-day-29" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-orange-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 29</span><h1 class="text-2xl font-bold text-gray-800">行业人脉建设 + 持续学习体系</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📌 核心目标</span><br><span class="text-sm">建立行业人脉和长期学习体系</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📦 产出物</span><br><span class="text-sm">人脉清单 + 学习资源体系</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-orange-100"><th class="border border-orange-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-orange-200 px-3 py-2 text-left w-24">时间</th><th class="border border-orange-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>信息源建设：</b>建立你的AI PM信息获取体系——①订阅Newsletter（推荐：AI产品经理、归因AI、海外：The Rundown AI、Ben's Bites）②关注Twitter/X上的AI PM大V ③加入AI PM社群（即刻圈子、知识星球、微信群）④定期浏览ProductHunt AI板块。列出10个你最常看的信息源。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>人脉建设：</b>列出你想建立联系的10个人（目标公司的PM、AI领域的KOL、招聘HR）。制定接触计划——①在即刻/知乎上评论他们的内容 ②参加线上/线下AI产品活动 ③通过共同朋友介绍。每建立1个有效联系就在追踪表上记录。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>内容输出（建立影响力）：</b>写一篇文章发布到知乎/即刻/人人都是产品经理——主题：「AI训练师转AI产品经理的30天学习复盘」或「一个AI训练师眼中的产品设计」。内容输出能帮你建立行业影响力，面试时也是加分项。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>建立持续学习计划：</b>30天只是开始。制定30天后的持续学习计划——①每天：阅读AI产品资讯30分钟 ②每周：深度体验1个新AI产品并写产品分析 ③每月：阅读1本产品/商业书籍（推荐书单见下方）④每季度：完成1个新的AI产品设计项目。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">15min</td><td class="border px-3 py-2"><b>输出：</b>整理「AI PM持续成长工具包」——你的信息源清单、书单、社群列表、学习节奏计划。</td></tr></tbody></table>
+        <div class="mt-4 p-4 bg-blue-50 border-l-4 border-blue-400 rounded text-sm"><b>📚 推荐书单（持续阅读）：</b>《启示录：打造用户喜爱的产品》Marty Cagan · 《俞军产品方法论》· 《精益数据分析》· 《用户体验要素》· 《疯传》· 《思考，快与慢》· 《这就是ChatGPT》Stephen Wolfram</div>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+  <!-- ============ DAY 30 ============ -->
+  <div id="detail-day-30" class="detail-page hidden fade-in">
+    <main class="max-w-6xl mx-auto px-4 py-8">
+      <div class="bg-white rounded-2xl shadow-lg p-6">
+        <div class="flex flex-wrap items-center gap-3 mb-6"><span class="bg-orange-500 text-white px-4 py-1.5 rounded-full font-bold text-lg">Day 30</span><h1 class="text-2xl font-bold text-gray-800">🎉 30天总复盘 + 毕业仪式</h1></div>
+        <div class="grid md:grid-cols-3 gap-4 mb-6"><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">⏰ 学习时长</span><br><span class="text-sm">约 3-4 小时</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📌 核心目标</span><br><span class="text-sm">全面复盘30天成果，正式出发</span></div><div class="bg-orange-50 rounded-lg p-4"><span class="font-bold text-orange-700">📦 产出物</span><br><span class="text-sm">30天学习总结 + 未来3个月行动清单</span></div></div>
+        <table class="w-full text-sm border-collapse"><thead><tr class="bg-orange-100"><th class="border border-orange-200 px-3 py-2 text-left w-16">步骤</th><th class="border border-orange-200 px-3 py-2 text-left w-24">时间</th><th class="border border-orange-200 px-3 py-2 text-left">具体学习内容（手把手）</th></tr></thead><tbody><tr><td class="border px-3 py-2 font-bold text-center">1</td><td class="border px-3 py-2">60min</td><td class="border px-3 py-2"><b>全面成果盘点：</b>清点和整理你这30天的所有产出物：①4个产品设计项目 ②AI术语词典 ③模型对比表 ④面试Q&A准备库 ⑤作品集 ⑥简历 ⑦求职追踪表 ⑧学习笔记与思维导图。打包为「AI PM 30天转行成果包」。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">2</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>知识体系终版：</b>用一张大的思维导图整理你的完整知识体系。结构：AI PM能力模型→AI技术基础→产品方法论→AI产品设计→数据驱动→商业与合规→项目管理→面试与求职。打印出来贴在工位上。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">3</td><td class="border px-3 py-2">45min</td><td class="border px-3 py-2"><b>能力自评：</b>用1-5分为自己的8大能力打分，对比Day 1的初始水平。找出进步最大的3个和最需要继续加强的3个。写在你的复盘笔记中。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">4</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>未来3个月行动清单：</b>制定详细的未来3个月行动计划——第1个月：密集投递+面试，目标8-10场面试，拿到1-2个Offer 第2个月：入职/继续面试，开始实际工作中的学习 第3个月：建立工作节奏，在实战中快速成长。写在Notion中并设为首页。</td></tr><tr><td class="border px-3 py-2 font-bold text-center">5</td><td class="border px-3 py-2">30min</td><td class="border px-3 py-2"><b>🎉 毕业庆祝：</b>恭喜你完成了30天的转行学习！你从零基础到建立了完整的AI PM知识体系、产出了4个产品方案、打磨了面试技能、开始了求职行动。AI训练师的背景不是劣势，而是你的超级武器——你比任何人都更懂AI的能力边界。出发吧，未来的AI产品经理！</td></tr></tbody></table>
+        <div class="mt-4 p-4 bg-gradient-to-r from-yellow-100 to-orange-100 border-l-4 border-yellow-500 rounded"><b class="text-lg">🏆 30天成果总结：</b><br>✅ <b>4个完整AI产品设计项目</b>（简历助手·知识库助手·写作助手·自由选题）<br>✅ <b>8大核心能力</b>体系化建立<br>✅ <b>100+小时</b>深度学习与实践<br>✅ <b>面试备战</b>完整Q&A库<br>✅ <b>求职行动</b>已启动<br><br><b class="text-indigo-700">💪 你的核心优势，没有人能复制：</b><br><em>"我是AI训练师出身的产品经理——我不仅知道AI能做什么，更知道AI会在哪里失败。我设计的产品，从第一行Prompt就带着对用户的深刻理解和对模型边界的清醒认知。"</em></div>
+      </div><div class="mt-6 text-center"><a href="#home" class="text-indigo-600 hover:text-indigo-800 font-bold"><i class="fa fa-arrow-left"></i> 返回首页</a></div></main></div>
+
+</div><!-- /detail-container -->
+
+<!-- ==================== 页脚 ==================== -->
+<footer class="text-center text-gray-400 text-sm py-8 border-t border-gray-200" id="shared-footer">
+  <p>AI训练师 → AI产品经理 · 30天零基础转行学习计划</p>
+  <p class="mt-1">最后更新：2026年7月 · 持续迭代中</p>
+  <p class="mt-2 text-xs">
+    <span id="progress-text"></span>
+  </p>
+</footer>
+
+<!-- ==================== JavaScript 路由 ==================== -->
+<script>
+(function() {
+  var TOTAL_DAYS = 30;
+  var currentDay = 0;
+
+  function getHashDay() {
+    var h = location.hash.replace('#', '');
+    if (h === 'home' || h === '') return 0;
+    var m = h.match(/^day-(\d+)$/);
+    return m ? parseInt(m[1]) : 0;
+  }
+
+  function showPage(dayNum) {
+    currentDay = dayNum;
+
+    // 隐藏/显示首页
+    var home = document.getElementById('home-page');
+    var nav = document.getElementById('detail-nav');
+    var container = document.getElementById('detail-container');
+
+    // 隐藏所有详情页
+    var allDetails = container.querySelectorAll('.detail-page');
+    for (var i = 0; i < allDetails.length; i++) {
+      allDetails[i].classList.add('hidden');
+    }
+
+    if (dayNum === 0) {
+      // 显示首页
+      home.classList.remove('hidden');
+      nav.classList.add('hidden');
+      // 滚动到顶部
+      var header = document.getElementById('shared-header');
+      if (header) header.scrollIntoView({ behavior: 'smooth' });
+      document.title = 'AI训练师转行AI产品经理 - 30天学习计划';
+    } else {
+      // 显示详情页
+      home.classList.add('hidden');
+      nav.classList.remove('hidden');
+
+      var detail = document.getElementById('detail-day-' + dayNum);
+      if (detail) {
+        detail.classList.remove('hidden');
+        // 更新导航标签
+        document.getElementById('current-day-label').textContent = 'Day ' + dayNum;
+
+        // 更新上/下一天按钮
+        var prevBtn = document.getElementById('prev-day-btn');
+        var nextBtn = document.getElementById('next-day-btn');
+        prevBtn.style.visibility = dayNum > 1 ? 'visible' : 'hidden';
+        nextBtn.style.visibility = dayNum < TOTAL_DAYS ? 'visible' : 'hidden';
+
+        // 更新标题
+        var titleEl = detail.querySelector('h1');
+        if (titleEl) {
+          document.title = 'Day ' + dayNum + ' - ' + titleEl.textContent.trim();
+        }
+
+        // 滚动到顶部
+        nav.scrollIntoView({ behavior: 'smooth' });
+      } else {
+        // 详情页不存在，回首页
+        location.hash = 'home';
+        return;
+      }
+    }
+  }
+
+  // 监听 hash 变化
+  window.addEventListener('hashchange', function() {
+    showPage(getHashDay());
+  });
+
+  // 上一天/下一天
+  document.getElementById('prev-day-btn').addEventListener('click', function() {
+    if (currentDay > 1) {
+      location.hash = 'day-' + (currentDay - 1);
+    }
+  });
+  document.getElementById('next-day-btn').addEventListener('click', function() {
+    if (currentDay < TOTAL_DAYS) {
+      location.hash = 'day-' + (currentDay + 1);
+    }
+  });
+
+  // 快速跳转下拉菜单
+  var jumpSelect = document.getElementById('jump-select');
+  // 生成 1-30 的选项
+  for (var d = 1; d <= TOTAL_DAYS; d++) {
+    var opt = document.createElement('option');
+    opt.value = 'day-' + d;
+    opt.textContent = 'Day ' + d;
+    jumpSelect.appendChild(opt);
+  }
+  jumpSelect.addEventListener('change', function() {
+    if (this.value) {
+      location.hash = this.value;
+    }
+  });
+
+  // 键盘导航：左右箭头切换天数
+  window.addEventListener('keydown', function(e) {
+    if (currentDay === 0) return; // 首页不处理
+    if (e.key === 'ArrowLeft' && currentDay > 1) {
+      e.preventDefault();
+      location.hash = 'day-' + (currentDay - 1);
+    } else if (e.key === 'ArrowRight' && currentDay < TOTAL_DAYS) {
+      e.preventDefault();
+      location.hash = 'day-' + (currentDay + 1);
+    } else if (e.key === 'Escape') {
+      e.preventDefault();
+      location.hash = 'home';
+    }
+  });
+
+  // 初始加载
+  showPage(getHashDay());
+})();
+</script>
+
+</body>
+</html>
